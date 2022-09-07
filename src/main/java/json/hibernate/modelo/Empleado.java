@@ -1,6 +1,7 @@
 package json.hibernate.modelo;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -24,9 +25,9 @@ public class Empleado implements Serializable
 	private String apellido;
 	
 	@Column(name="FEC_NAC")
-	private Date nacimiento;
+	private LocalDate nacimiento;
 	
-	public Empleado(Long codigo, String nombre, String apellido, Date nacimiento) 
+	public Empleado(Long codigo, String nombre, String apellido, LocalDate nacimiento) 
 	{
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -60,11 +61,11 @@ public class Empleado implements Serializable
 		this.apellido = apellido;
 	}
 
-	public Date getNacimiento() {
+	public LocalDate getNacimiento() {
 		return nacimiento;
 	}
 
-	public void setNacimiento(Date nacimiento) {
+	public void setNacimiento(LocalDate nacimiento) {
 		this.nacimiento = nacimiento;
 	}
 

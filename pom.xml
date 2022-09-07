@@ -32,7 +32,21 @@
 		    <groupId>com.h2database</groupId>
 		    <artifactId>h2</artifactId>
 		    <version>2.1.214</version>
-		    <scope>test</scope>
+
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>mssql-jdbc</artifactId>
+		    <version>11.2.0.jre18</version>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-java8 -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-java8</artifactId>
+		    <version>5.6.11.Final</version>
 		</dependency>
 
 
@@ -50,6 +64,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        
     </build>
     
 </project>
